@@ -1,0 +1,135 @@
+task 1
+
+import java.util.Scanner;
+ 
+public class Main{
+    public static void main(String[] args)
+    {
+         Scanner obj= new Scanner(System.in);
+         System.out.println("Enter n value");
+         int n = obj.nextInt();
+      
+         for(int i=10;i<=n;i++)
+         {
+             System.out.print(i);
+         }
+    }
+}
+
+i/p:Enter n value
+    50
+o/p:1011121314151617181920212223242526272829303132333435363738394041424344454647484950
+1.2
+
+    import java.util.Scanner;
+     
+    public class Main{
+        public static void main(String[] args)
+        {
+             Scanner obj= new Scanner(System.in);
+             System.out.println("Enter n value");
+             int n = obj.nextInt();
+          if(n>0)
+          {
+              System.out.print("number is positive");
+          }
+        else
+        {
+          System.out.print("number is negative");  
+        }
+        }
+        
+    }
+
+i/p:480
+o/p:number is positive
+
+1.3
+
+ public class Main {
+  public static void main(String[] args) {
+
+    int num = 876, reversed = 0;
+    
+    System.out.println("Original Number: " + num);
+
+    // run loop until num becomes 0
+    while(num != 0) {
+    
+      // get last digit from num
+      int digit = num % 10;
+      reversed = reversed * 10 + digit;
+
+      // remove the last digit from num
+      num = num /10;
+    }
+
+    System.out.println("Reversed Number: " + reversed);
+  }
+}
+
+i/p:Original Number: 876
+o/p:Reversed Number: 678
+
+1.4
+
+
+ import java.util.Scanner;
+     
+    public class Main{
+        public static void main(String[] args)
+        {
+             Scanner obj= new Scanner(System.in);
+             System.out.println("Enter n value");
+             int n = obj.nextInt();
+          if(n<500)
+          {
+              System.out.print("no discount");
+          }
+        else if(n>500&&n<1000)
+        {
+            n=n-(10/100*n);
+          System.out.print(n);  
+        }
+        else if(n>1000)
+        {
+            n=n-(20/100*n);
+            System.out.print(n);
+        }
+        }
+        
+    }
+
+i/p:400
+o/p:no discount
+
+
+1.3
+
+import java.util.Scanner;  
+public class Main
+{  
+public static void main(String args[])  
+{  
+int num1, num2, num3;  
+System.out.println("Enter three integers: ");  
+Scanner in = new Scanner(System.in);  
+num1=in.nextInt();  
+num2=in.nextInt();  
+num3=in.nextInt();  
+if (num1 < num2 && num1 < num3)  
+System.out.println("The smallest number is: "+num1);  
+else if (num2 < num1 && num2 < num3)  
+System.out.println("The smallest number is: "+num2);  
+else if (num3 < num1 && num3 < num2)  
+System.out.println("The smallest number is: "+num3);  
+}  
+}
+
+i/p:1      o/p:The smallest number is: 1
+    2
+    3
+
+
+
+}  
